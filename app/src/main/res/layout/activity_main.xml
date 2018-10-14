@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+    tools:context="app.num.Icu.MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:id="@+id/linearLayout2"
+            android:elevation="5dp">
+
+                <TextView
+                    android:id="@+id/ID"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="15"
+                    android:gravity="center"
+                    android:background="#55555555"
+                    android:shadowColor="#FF464646"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="ID"
+                    tools:text="ID"
+                    android:elevation="3dp"/>
+
+                <TextView
+                    android:id="@+id/DAY"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="35"
+                    android:gravity="center"
+                    android:background="#55555555"
+                    android:shadowColor="#FF464646"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="DAY"
+                    tools:text="DAY"
+                    android:elevation="3dp"/>
+
+
+                <TextView
+                    android:id="@+id/LEFT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:background="#55555555"
+                    android:shadowColor="#FF464646"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="LEFT"
+                    tools:text="LEFT"
+                    android:elevation="3dp"/>
+
+                <TextView
+                    android:id="@+id/RIGHT"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="20"
+                    android:gravity="center"
+                    android:background="#55555555"
+                    android:shadowColor="#FF464646"
+                    android:shadowDx="1.0"
+                    android:shadowDy="1.0"
+                    android:shadowRadius="1.0"
+                    android:text="RIGHT"
+                    tools:text="RIGHT"
+                    android:elevation="3dp"/>
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/chart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="10dp"
+            android:elevation="3dp"/>
+
+        <ListView
+            android:id="@+id/listView_main_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_marginTop="10dp" />
+
+</RelativeLayout>

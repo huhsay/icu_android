@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.num.Icu.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_time"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/sub_stime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="앉기시작"
+            android:background="#55555555"
+            android:shadowColor="#FF464646"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0" />
+
+        <TextView
+            android:id="@+id/sub_etime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:padding="5dp"
+            android:background="#55555555"
+            android:shadowColor="#FF464646"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"
+            android:text="일어남" />
+
+
+        <TextView
+            android:id="@+id/sub_left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="LEFT"
+            android:background="#55555555"
+            android:shadowColor="#FF464646"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"/>
+
+        <TextView
+            android:id="@+id/sub_right"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="20"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="RIGHT"
+            android:background="#55555555"
+            android:shadowColor="#FF464646"
+            android:shadowDx="1.0"
+            android:shadowDy="1.0"
+            android:shadowRadius="1.0"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:padding="5dp" />
+
+    <ListView
+        android:id="@+id/listView_sub_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout3" />
+
+</RelativeLayout>
